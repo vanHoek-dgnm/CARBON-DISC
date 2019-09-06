@@ -1,0 +1,16 @@
+# ******************************************************
+## Revision "$LastChangedDate$"
+## Date "$LastChangedRevision$"
+## Author "$LastChangedBy$"
+## URL "$HeadURL$"
+## Copyright 2017, PBL Netherlands Environmental Assessment Agency and Utrecht University.
+## Reuse permitted under Gnu Public License, GPL v3.
+# ******************************************************
+
+import ascraster
+import sys
+
+# Read ascii grid
+grid = ascraster.Asciigrid(ascii_file=sys.argv[1])
+grid.save_as_bitmap('qq.jpg')
+

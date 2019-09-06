@@ -1,0 +1,32 @@
+# ******************************************************
+## Revision "$LastChangedDate$"
+## Date "$LastChangedRevision$"
+## Author "$LastChangedBy$"
+## URL "$HeadURL$"
+## Copyright 2017, PBL Netherlands Environmental Assessment Agency and Utrecht University.
+## Reuse permitted under Gnu Public License, GPL v3.
+# ******************************************************
+
+import os, time
+from stat import * # ST_SIZE etc
+
+def get_file_info(filename):
+    '''
+    Gets information of a file and puts it in a list of strings.
+    '''
+    out = []
+    try:
+       st = os.stat(filename)
+    except IOError:
+        print("** WARNING ** Failed to get information about", filename)
+    else:
+        out.append("********************************************")
+        out.append("File name: " + os.path.abspath(filename))
+        out.append("File size: " + str(st[ST_SIZE]))
+        out.append("File modified: " + str(time.asctime(time.localtime(st[ST_MTIME]))))
+        out.append(" ")
+        #print "File name: " + os.path.abspath(filename)
+        #print "File size:", st[ST_SIZE]
+        #print "File modified:", time.asctime(time.localtime(st[ST_MTIME]))
+    
+    return out

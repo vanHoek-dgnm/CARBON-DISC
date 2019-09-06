@@ -1,0 +1,16 @@
+# ******************************************************
+## Revision "$LastChangedDate$"
+## Date "$LastChangedRevision$"
+## Author "$LastChangedBy$"
+## URL "$HeadURL$"
+## Copyright 2017, PBL Netherlands Environmental Assessment Agency and Utrecht University.
+## Reuse permitted under Gnu Public License, GPL v3.
+# ******************************************************
+
+def iround(x):
+    '''
+    iround(number) -> integer
+    Round a number to the nearest integer.
+    '''
+    y = round(float(x)) - .5
+    return int(y) + (y > 0)
