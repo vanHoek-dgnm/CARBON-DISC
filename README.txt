@@ -3,6 +3,7 @@ README to run CARBON-DISC 1.0
 COMPUTATIONAL REQUIREMENTS:
 LINUX OS
 Python 3.5 or more
+Anaconda 3 environment (https://www.anaconda.com/distribution/)
 Installed numpy module (https://numpy.org/)
 Installed NETCDF4 module (https://pypi.org/project/netCDF4/)
 Installed mocsy module (http://ocmip5.ipsl.jussieu.fr/mocsy/)
@@ -40,8 +41,9 @@ When the model runs have been succesful, it is essential to convert the produced
 
 7.  If wanted, run aggregate_timeseries.py produces csv tables providing basin aggregated values of almost all used and produced model output.*
     The csv tables are found in the ANALYSIS directory within the output directory 
-        python aggregate_timeseries.py --inifile **
+        python aggregate_timeseries.py --inifile ***
 	* Running the output_conversion.py script is necessary before running aggreate_timeseries.py
+	** Run the script from the directory /A_source_code/carbon/code
 	** fill in the inifile that is used for the model run
 
 8. To conduct a shorter modelrun, make a new inifile with a new output directory and change the starttime and endtime (i.e. 1996 and 2000)
