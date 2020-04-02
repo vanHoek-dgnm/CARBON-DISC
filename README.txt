@@ -4,9 +4,10 @@ COMPUTATIONAL REQUIREMENTS:
 LINUX OS
 Python 3.5 or more
 Anaconda 3 environment (https://www.anaconda.com/distribution/)
-Installed numpy module (https://numpy.org/)
-Installed NETCDF4 module (https://pypi.org/project/netCDF4/)
-Installed mocsy module (http://ocmip5.ipsl.jussieu.fr/mocsy/)
+with:
+-installed numpy module (https://numpy.org/)
+-installed NETCDF4 module (https://pypi.org/project/netCDF4/)
+-installed mocsy module (http://ocmip5.ipsl.jussieu.fr/mocsy/)
 
 LICENSE:
 # ******************************************************
