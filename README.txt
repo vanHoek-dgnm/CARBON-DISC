@@ -48,4 +48,3 @@ When the model runs have been succesful, it is essential to convert the produced
 	** fill in the inifile that is used for the model run
 
 8. To conduct a shorter modelrun, make a new inifile with a new output directory and change the starttime and endtime (i.e. 1996 and 2000)
-
